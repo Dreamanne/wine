@@ -541,9 +541,9 @@
 @ thiscall -arch=i386 ?_GetScheduler@_Scheduler@details@Concurrency@@QAEPAVScheduler@3@XZ(ptr) _Scheduler__GetScheduler
 @ cdecl -arch=win64 ?_GetScheduler@_Scheduler@details@Concurrency@@QEAAPEAVScheduler@3@XZ(ptr) _Scheduler__GetScheduler
 @ cdecl ?_Id@_CurrentScheduler@details@Concurrency@@SAIXZ() _CurrentScheduler__Id
-@ stub -arch=arm ?_Invoke@_CancellationTokenRegistration@details@Concurrency@@AAAXXZ
-@ stub -arch=i386 ?_Invoke@_CancellationTokenRegistration@details@Concurrency@@AAEXXZ
-@ stub -arch=win64 ?_Invoke@_CancellationTokenRegistration@details@Concurrency@@AEAAXXZ
+@ cdecl -arch=arm ?_Invoke@_CancellationTokenRegistration@details@Concurrency@@AAAXXZ(ptr) _CancellationTokenRegistration_Invoke
+@ thiscall -arch=i386 ?_Invoke@_CancellationTokenRegistration@details@Concurrency@@AAEXXZ(ptr) _CancellationTokenRegistration_Invoke
+@ cdecl -arch=win64 ?_Invoke@_CancellationTokenRegistration@details@Concurrency@@AEAAXXZ(ptr) _CancellationTokenRegistration_Invoke
 @ stub -arch=arm ?_IsCanceling@_StructuredTaskCollection@details@Concurrency@@QAA_NXZ
 @ stub -arch=i386 ?_IsCanceling@_StructuredTaskCollection@details@Concurrency@@QAE_NXZ
 @ stub -arch=win64 ?_IsCanceling@_StructuredTaskCollection@details@Concurrency@@QEAA_NXZ

@@ -1083,6 +1083,64 @@ void __cdecl _CurrentScheduler__ScheduleTask(void (__cdecl *proc)(void*), void *
     CurrentScheduler_ScheduleTask(proc, data);
 }
 
+typedef struct
+{
+    /* virtual functions table */
+    void* (*destructor)(void);
+    void* (*_Destroy)(void);
+    LONG ref_count;
+} _RefCounter;
+
+typedef struct
+{
+    void* m1[8];
+    LONG m2[4];
+} mutex;
+
+typedef struct
+{
+    void* p[8];
+    int c[2];
+} condition_variable;
+
+typedef struct
+{
+    void *p1;
+    void *p2;
+} TokenRegistrationContainer;
+
+typedef struct
+{
+    LONG len;
+    mutex m;
+    TokenRegistrationContainer t;
+    /* public inheritance */
+    _RefCounter r;
+} _CancellationTokenState;
+
+typedef struct
+{
+    /* virtual functions table */
+    void* (*destructor)(void);
+    void* (*_Exec)(void);
+    LONG len;
+    /* msvcp120 uses event instead of condition_variable and mutex */
+    condition_variable c;
+    mutex m;
+    MSVCRT_bool b;
+    _CancellationTokenState *s;
+    /* public inheritance */
+    _RefCounter r;
+} _CancellationTokenRegistration;
+
+/* ?_Invoke@_CancellationTokenRegistration@details@Concurrency@@AAEXXZ */
+/* ?_Invoke@_CancellationTokenRegistration@details@Concurrency@@AEAAXXZ */
+DEFINE_THISCALL_WRAPPER(_CancellationTokenRegistration_Invoke, 4)
+void __thiscall _CancellationTokenRegistration_Invoke(_CancellationTokenRegistration *this)
+{
+    FIXME("(%p) stub\n", this);
+}
+
 extern const vtable_ptr MSVCRT_type_info_vtable;
 DEFINE_RTTI_DATA0(Context, 0, ".?AVContext@Concurrency@@")
 DEFINE_RTTI_DATA1(ContextBase, 0, &Context_rtti_base_descriptor, ".?AVContextBase@details@Concurrency@@")
