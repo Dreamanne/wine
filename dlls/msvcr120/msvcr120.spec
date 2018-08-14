@@ -514,9 +514,9 @@
 @ stub -arch=arm ?_Destroy@_AsyncTaskCollection@details@Concurrency@@EAAXXZ
 @ stub -arch=i386 ?_Destroy@_AsyncTaskCollection@details@Concurrency@@EAEXXZ
 @ stub -arch=win64 ?_Destroy@_AsyncTaskCollection@details@Concurrency@@EEAAXXZ
-@ stub -arch=arm ?_Destroy@_CancellationTokenState@details@Concurrency@@EAAXXZ
-@ stub -arch=i386 ?_Destroy@_CancellationTokenState@details@Concurrency@@EAEXXZ
-@ stub -arch=win64 ?_Destroy@_CancellationTokenState@details@Concurrency@@EEAAXXZ
+@ cdecl -arch=arm ?_Destroy@_CancellationTokenState@details@Concurrency@@EAAXXZ(ptr) _CancellationTokenState_Destroy
+@ thiscall -arch=i386 ?_Destroy@_CancellationTokenState@details@Concurrency@@EAEXXZ(ptr) _CancellationTokenState_Destroy
+@ cdecl -arch=win64 ?_Destroy@_CancellationTokenState@details@Concurrency@@EEAAXXZ(ptr) _CancellationTokenState_Destroy
 @ cdecl -arch=arm ?_DoYield@?$_SpinWait@$00@details@Concurrency@@IAAXXZ(ptr) SpinWait__DoYield
 @ thiscall -arch=i386 ?_DoYield@?$_SpinWait@$00@details@Concurrency@@IAEXXZ(ptr) SpinWait__DoYield
 @ cdecl -arch=win64 ?_DoYield@?$_SpinWait@$00@details@Concurrency@@IEAAXXZ(ptr) SpinWait__DoYield

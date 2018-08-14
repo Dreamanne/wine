@@ -1141,6 +1141,74 @@ void __thiscall _CancellationTokenRegistration_Invoke(_CancellationTokenRegistra
     FIXME("(%p) stub\n", this);
 }
 
+/* ??0_CancellationTokenState@details@Concurrency@@AAE@XZ */
+/* ??0_CancellationTokenState@details@Concurrency@@AEAA@XZ */
+DEFINE_THISCALL_WRAPPER(_CancellationTokenState_ctor, 4)
+void __thiscall _CancellationTokenState_ctor(_CancellationTokenState *this)
+{
+    FIXME("(%p) stub\n", this);
+}
+
+/* ??1_CancellationTokenState@details@Concurrency@@UAE@XZ */
+/* ??1_CancellationTokenState@details@Concurrency@@UEAA@XZ */
+DEFINE_THISCALL_WRAPPER(_CancellationTokenState_dtor, 4)
+void __thiscall _CancellationTokenState_dtor(_CancellationTokenState *this)
+{
+    FIXME("(%p) stub\n", this);
+}
+
+/* ?_DeregisterCallback@_CancellationTokenState@details@Concurrency@@QAEXPAV_CancellationTokenRegistration@23@@Z */
+/* ?_DeregisterCallback@_CancellationTokenState@details@Concurrency@@QEAAXPEAV_CancellationTokenRegistration@23@@Z */
+DEFINE_THISCALL_WRAPPER(_CancellationTokenState_DeregisterCallback, 8)
+void __thiscall _CancellationTokenState_DeregisterCallback(_CancellationTokenState *this, _CancellationTokenRegistration *r)
+{
+    FIXME("(%p %p) stub\n", this, r);
+}
+
+/* ?_NewTokenState@_CancellationTokenState@details@Concurrency@@SAPAV123@XZ */
+/* ?_NewTokenState@_CancellationTokenState@details@Concurrency@@SAPEAV123@XZ */
+DEFINE_THISCALL_WRAPPER(_CancellationTokenState_NewTokenState, 4)
+_CancellationTokenState * __thiscall _CancellationTokenState_NewTokenState(_CancellationTokenState *this)
+{
+    FIXME("(%p) stub\n", this);
+    return NULL;
+}
+
+/* ?_RegisterCallback@_CancellationTokenState@details@Concurrency@@QAEPAV_CancellationTokenRegistration@23@P6AXPAX@Z0H@Z */
+/* ?_RegisterCallback@_CancellationTokenState@details@Concurrency@@QEAAPEAV_CancellationTokenRegistration@23@P6AXPEAX@Z0H@Z */
+DEFINE_THISCALL_WRAPPER(_CancellationTokenState_RegisterCallback, 16)
+_CancellationTokenRegistration * __thiscall _CancellationTokenState_RegisterCallback(_CancellationTokenState *this,
+        void (__cdecl* func)(void *), void *p, int l)
+{
+    FIXME("(%p %p %p %ld) stub\n", this, func, p, (long)l);
+    return NULL;
+}
+
+/* ?_RegisterCallback@_CancellationTokenState@details@Concurrency@@QAEXPAV_CancellationTokenRegistration@23@@Z */
+/* ?_RegisterCallback@_CancellationTokenState@details@Concurrency@@QEAAXPEAV_CancellationTokenRegistration@23@@Z */
+DEFINE_THISCALL_WRAPPER(_CancellationTokenState_TokenRegisterCallback, 4)
+void __thiscall _CancellationTokenState_TokenRegisterCallback(_CancellationTokenState *this,
+        _CancellationTokenRegistration *r)
+{
+    FIXME("(%p %p) stub\n", this, r);
+}
+
+/* ?_Cancel@_CancellationTokenState@details@Concurrency@@QAEXXZ */
+/* ?_Cancel@_CancellationTokenState@details@Concurrency@@QEAAXXZ */
+DEFINE_THISCALL_WRAPPER(_CancellationTokenState_Cancel, 4)
+void __thiscall _CancellationTokenState_Cancel(_CancellationTokenState *this)
+{
+    FIXME("(%p) stub\n", this);
+}
+
+/* ?_Destroy@_CancellationTokenState@details@Concurrency@@EAEXXZ */
+/* ?_Destroy@_CancellationTokenState@details@Concurrency@@EEAAXXZ */
+DEFINE_THISCALL_WRAPPER(_CancellationTokenState_Destroy, 4)
+void __thiscall _CancellationTokenState_Destroy(_CancellationTokenState *this)
+{
+    FIXME("(%p) stub\n", this);
+}
+
 extern const vtable_ptr MSVCRT_type_info_vtable;
 DEFINE_RTTI_DATA0(Context, 0, ".?AVContext@Concurrency@@")
 DEFINE_RTTI_DATA1(ContextBase, 0, &Context_rtti_base_descriptor, ".?AVContextBase@details@Concurrency@@")
